@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .menu span{
+        @apply flex items-center justify-center flex-col mb-2
+    }
+    .mobileView {
+        @apply max-sm:flex max-sm:flex-col max-sm:items-center max-sm:top-0 max-sm:fixed max-sm:justify-center max-sm:w-full max-sm:h-full max-sm:-right-full duration-300 max-sm:z-50;
+      }
+       .roadmap-line {
+        @apply after:w-[1px] after:h-[65%] sm:after:h-[90%] after:absolute  after:bg-[url('./public/images/roadmap-line.png')] after:top-[8%]  sm:after:top-0 after:left-[50%]
+      }    
+      .svg1 {
+        @apply after:absolute after:-left-[90px] after:-top-[52px] after:bg-[url('./public/images/roadmap-circle.svg')] after:w-[58px] after:h-[58px] after:bg-no-repeat;}
+    
+      .svg2 {
+        @apply after:absolute after:-right-[90px] after:-top-[52px] after:bg-[url('./public/images/roadmap-circle.svg')] after:w-[58px] after:h-[58px] after:bg-no-repeat;}
+    
+      .sm-svg2 {
+        @apply before:absolute before:-left-[60px] before:-top-[52px] before:bg-[url('./public/images/roadmap-circle.svg')] before:w-[58px] before:h-[58px] before:bg-no-repeat before:block;}}
+    .my-text{
+    -webkit-text-stroke: 1px #5eb1c5;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    input[number]:focus{
+        border: #2c2c2c;
+    }
+    .show {
+      left: 0;
+    }
+    
+    .rotate1 {
+      transform: rotate(45deg);
+    }
+    
+    .rotate2 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -8px;
+    }
+    
+    .rotate3 {
+      display: none !important;
+    }
+    .accordionMenu input[type=radio] {
+      display: none;
+    }
+    
+    .accordionMenu .content {
+      max-height: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .accordionMenu input[type=radio]:checked+label+.content {
+      max-height: 2000px;
+      height: auto;
+    }
+    
+    .accordionMenu input[type=radio]:checked+label p svg {
+      transform: rotate(180deg);
+    }
+    
+    .accordionMenu1 input[type=radio] {
+      display: none;
+    }
+    
+    .accordionMenu1 .content1 {
+      max-height: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .accordionMenu1 input[type=radio]:checked+label p span .plus {
+      display: none;
+    }
+    
+    .accordionMenu1 input[type=radio]:checked+label p span .sub {
+      transform: translateX(-10px);
+    }
+    
+    .accordionMenu1 input[type=radio]:checked+label+.content1 {
+      max-height: 2000px;
+      height: auto;
+    }
+    .slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
+.overflow_hidden{
+  overflow: hidden;
+}
